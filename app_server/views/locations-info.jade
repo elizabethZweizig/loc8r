@@ -1,0 +1,81 @@
+extends layout
+
+block content
+  .row.page-header
+      .col-lg-12
+        h1 Starbucks
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+            span.glyphicon.glyphicon-star-empty
+          p Center and Mullen St Tacoma WA
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Opening hours
+            .panel-body
+              p Monday -Friday : 4:30am - 7:00pm
+              p Saturday - Sunday : 5:30 - 7:00
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Facilities
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Hot drinks
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Food
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Premium wifi
+              | &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Location map
+            .panel-body
+              img.img-responsive.img-rounded(src='https://www.google.com/maps/place/Starbucks/@47.2339867,-122.5029275,18z/data=!4m12!1m6!3m5!1s0x5491aac993a72bad:0xb1ccd472190be820!2sStarbucks!8m2!3d47.2339867!4d-122.5018412!3m4!1s0x5491aac993a72bad:0xb1ccd472190be820!8m2!3d47.2339867!4d-122.5018412')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/location/review/new') Add review
+              h2.panel-title Customer reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor Simon Holmes
+                    small.reviewTimestamp 16 July 2013
+                  .col-xs-12
+                    p What a great place. I can't day enough good things about it
+              .row
+                .review
+                  .well.well.sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor Charlie Chaplin
+                    small.reviewTimestam 16 June 2013
+                  .col-xs-12
+                    p It was okay. Coffee wasn't great, but the wifi was fast.
+  .col-xs-12.col-md-3
+    p.lead  Starbucks is where I work.
+    p If you've visited please leave a review to help other people just like you.
