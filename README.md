@@ -14,4 +14,9 @@ This Chapter I didn't commit 4 times because that bit of instructions was at the
 
 I do however have screenshots throughout the process from using localhost:3000 to localhost:5000 and finally https://sheltered-tundra-14564.herokuapp.com/.
 
-I have included these in my moodle submission. 
+I have included these in my moodle submission.
+
+End of Assignment 3 and Chapter 4 Comments: The error for this assignment was on page 107, asking to edit list.jade when it was locations-list.jade.
+Getting the syntax correct in this assignment was very difficult, linking the pages correctly, etc.
+
+My moodle submission shows the working four pages. 
