@@ -1,6 +1,9 @@
 var mongoose = require( 'mongoose' );
 
 var dbURI = 'mongodb://127.0.0.1/loc8r';
+if(process.env.NODE_ENV === 'production'){
+  dbURI = 'mongodb://heroku_chvk03sz:ueit9b01o7v02en45h5fjjicih@ds145997.mlab.com:45997/heroku_chvk03sz';
+}
 mongoose.connect(dbURI);
 
 mongoose.connection.on('connected', function () {
@@ -14,7 +17,7 @@ mongoose.connection.on('disconnected', function () {
 });
 
 var gracefulShutdown = function (msg, callback) {
-  mongoose.commection.close(function() {
+  mongoose.connection.close(function() {
     console.log('Mongoose disconnected through ' + msg);
     callback();
   });
